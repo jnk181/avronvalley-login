@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="./style.css">
+        <script>
+            var weather_configs=0;
+        </script>
+        <script src="./weather_config.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/greeter.js"></script>
+        <script src="./js/mock.js"></script>
+    </head>
+    <body onload="initialize()">
+        <div class="body-overlay"></div>
+        <div class="body-background" style="transform:scale(1.3)"></div>
+        <div class="top-left-corner text-highlighted">
+            <div class="welcome-notice">
+                <img class="icon" src="./styles/arvon/assets/smile.png">
+                <span class="main-text">
+                    <h1>Welcome</h1>
+                    <p>To log in, click your user account</p>
+                </span>
+            </div>
+        </div>
+        <div class="top-right-corner text-highlighted">
+            <div class="time">
+                <span class="main-text">
+                    <h1>00:00 AM</h1>
+                    <p>Thursday, January 1, 1970</p>
+                </span>
+                <div class="clock">
+                    <img class="base" src="./styles/arvon/assets/clock/face-bk.png">
+                    <img class="arrow-hour" src="./styles/arvon/assets/clock/arrow-hour.png">
+                    <img class="arrow-min" src="./styles/arvon/assets/clock/arrow-min.png">
+                    <img class="arrow-sec" src="./styles/arvon/assets/clock/arrow-sec.png">
+                </div>
+            </div>
+        </div>
+        <div class="top-center-corner">
+            <img src="./img/branding.png">
+        </div>
+        <div class="top">
+
+        </div>
+        <div class="center" style="opacity:0;">
+            <div class="pfp">
+                <div class="background blur">
+                    <div class="blurred-background-image-overlay"></div>
+                    <div class="blurred-background-image"></div>
+                    <div class="pfp-wrap"></div>
+                </div>
+            </div>
+            <div class="login-input">
+                <h1 class="text-highlighted">User</h1>
+                <div class="input-container blur">
+                    <input id="password" type="password" onkeypress="handle_inputkeypress(this,event)" placeholder="Password">
+                    <div class="caps-notice"></div>
+                    <div class="enter-button">
+                        <img src="./styles/arvon/assets/go-next.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="de_choose">
+            <div class="input-container blur">
+                <input id="de_choose" type="text">
+            </div>
+        </div>
+
+        <div class="loading">
+            <img src="./img/loading.gif">
+        </div>
+
+        <div class="bottom blur" style="transform:translateY(100%)">
+            <div class="weather" style="opacity:0;">
+                <div class="location">
+                    <img src="./styles/arvon/assets/weather/location.png">
+                    <span>Town, CN</span>
+                </div>
+                <div class="information">
+                    <div class="text">
+                        <h1>18</h1><span class="degree-unit">°C</span><br>
+                        <span class="condition">Partly cloudy</span>
+                    </div>
+                    <img class="icon" src="./styles/arvon/assets/weather/2.png">
+                </div>
+                <span class="last-updated">Last updated at <span class="time">00:00 AM</span></span>
+            </div>
+            <div class="users">
+
+                <div class="user template" id="user" data-displayname="User">
+                    <div class="pfp">
+                        <div class="background blur">
+                            <div class="blurred-background-image-overlay"></div>
+                            <div class="blurred-background-image" style="background-size:100% 100%;"></div>
+                            <div class="pfp-wrap" style="background-size:100% 100%;"></div>
+                        </div>
+                    </div>
+                    <span class="name">User</span>
+                </div>
+
+            </div>
+            <div class="power-options">
+                <div class="item">
+                    <img src="./styles/arvon/assets/power-buttons/suspend.png">
+                    <span>Suspend</span>
+                </div>
+                <div class="item">
+                    <img src="./styles/arvon/assets/power-buttons/restart.png">
+                    <span>Restart</span>
+                </div>
+                <div class="item">
+                    <img src="./styles/arvon/assets/power-buttons/shutdown.png">
+                    <span>Shut down</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
