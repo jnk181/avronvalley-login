@@ -11,4 +11,7 @@ This login theme was inspired by @ByDrexel's Windows Avron concept: https://x.co
 * Copy `./AvronValley` to `/usr/share/web-greeter/themes/` with `sudo cp -r AvronValley /usr/share/web-greeter/themes`
 * Set the `web-greeter` theme to `AvronValley` in `/etc/lightdm/web-greeter.yml`
 
+# Notes
+- Weather doesn't work because web-greeter can't use the fetch API.
+
 # To-do
