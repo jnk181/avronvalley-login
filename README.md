@@ -12,6 +12,6 @@ This login theme was inspired by @ByDrexel's Windows Avron concept: https://x.co
 * Set the `web-greeter` theme to `AvronValley` in `/etc/lightdm/web-greeter.yml`
 
 # Notes
-- Weather doesn't work because web-greeter can't use the fetch API.
+- To make the weather work, you must make a `weather_config.js` file and provide location data and you must turn off `secure_mode` in `/etc/lightdm/webgreeter.yml`
 
 # To-do
