@@ -2,6 +2,9 @@
 ![alt text](https://raw.githubusercontent.com/jnk181/avronvalley-login/refs/heads/main/screenshot.webp)
 This login theme was inspired by @ByDrexel's Windows Avron concept: https://x.com/ByDrexel/status/1914076393391992980
 
+# Features
+- Light theme
+
 # Installation
 ## Any
 * Install `lightdm` and `web-greeter`
