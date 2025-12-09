@@ -1,0 +1,79 @@
+@import url("../arvon/style.css");
+
+body {
+    color:black;
+    background:white;
+}
+
+:root {
+  --primary-text-highlight-color: #272e28;
+}
+
+.text-highlighted {
+    text-shadow:0 0 18px white;
+}
+
+.body-background {
+    background:url("../../img/wallpaper/crimsonflow_liamz2r_green_light.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bottom {
+    background: linear-gradient(#ffffff4f, transparent, #ffffff00), linear-gradient(#ffffff77, #adadad8a 49%, #8d8d8d85 50%, #00000066);
+    box-shadow: 0 0 0px 1px #575757;
+    border-color:white;
+}
+
+.bottom .weather {
+    border-color:#a9a9a9;
+    box-shadow: 0 0 0px 1px #d1d1d1;
+}
+
+.bottom .power-options .item span {
+    color:#000000bd;
+}
+
+.pfp .background {
+    box-shadow: 0 0 15px 3px #ffffff9d, inset 0 0 10px 3px #00000031;
+    background: radial-gradient(circle 350px at 50% -40%, #ffffff50, #ffffff1f 50%, #00000011 52%), linear-gradient(#4696ff, #3f768b, #7b90ff);
+}
+
+.bottom .users .user .pfp .background {
+    background: radial-gradient(circle 150px at 50% -40%, #ffffff50, #ffffff1f 50%, #00000011 52%), linear-gradient(#4696ff, #3f768b, #7b90ff);
+}
+
+.input-container {
+    border-color: #ffffff;
+    box-shadow: 0 0 0px 1px #a1a1a1;
+    background: linear-gradient(#ffffffc2, transparent, #ffffff8a), rgb(179 179 179 / 65%);
+}
+
+.input-container input {
+    color:#000000b2;
+}
+
+.input-container input#password::placeholder {
+    color:#00000063;
+}
+
+.input-container .enter-button {
+    border-color: #ffffff;
+    box-shadow: 0 0 0px 1px #a1a1a1;
+    background: linear-gradient(#ffffffc2, transparent, #ffffff8a), rgb(179 179 179 / 65%);
+}
+
+.input-container .enter-button img {
+    filter: hue-rotate(230deg) brightness(0.69) contrast(3.5);
+}
+
+.top img,
+.top-left-corner img,
+.top-right-corner img {
+    filter: drop-shadow(0px 0px 6px black);
+}
+
+.bottom .weather span.last-updated {
+    color:#000000a8;
+}
